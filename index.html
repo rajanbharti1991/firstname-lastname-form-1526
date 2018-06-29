@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+<!--Main Content -->
+    <section class="form wrapper">
+<!--Form -->
+        <form name="main_form" id="main-form">
+            <fieldset>
+                <legend>Form Assignment</legend>
+
+                <section class="grid-container">
+
+<!--Full Name Field-->
+                    <div class="grid-item">
+                        <label for="fname">Full Name</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+
+<!--Email Field-->
+                    <div class="grid-item">
+                        <label for="email">Email</label>
+                        <input type="text" name="u_email" id="u_email">
+                    </div>
+                </section> <!--/.grid-container-->
+
+<!--Message Field-->
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="textarea" id="message" value=""></textarea>
+                </div>
+
+<!--Send Button-->
+                <div>
+                    <input type="button" name="btn" id="btn" value="Submit" />
+                </div>
+            </fieldset>
+        </form>
+    </section> <!-- /.form & /.wrapper-->
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
