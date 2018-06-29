@@ -1,0 +1,123 @@
+/*All text Style*/
+body {
+    font-family: 'ariel', 'helvetica', 'helvetica-neue', sans-serif;
+}
+
+a,
+label,
+p,
+input,
+textarea {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+legend {
+    font-size: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 15px 15px;
+    background-color: #fff;
+}
+
+/*Wrapper style*/
+.wrapper {
+    min-width: 20rem;
+    margin: 0 auto;
+}
+
+div {
+    margin: 10px 0;
+}
+
+/*Fieldset*/
+fieldset {
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+
+/*All Labels*/
+label {
+    display: block;
+    margin: 5px auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Input fields*/
+input[type=text],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border: 1px dashed #ddd;
+}
+
+textarea {
+    width: 100%;
+    min-height: 5rem;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+textarea:focus {
+    border: 1px dashed #ddd;
+}
+
+input[type=button] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0.5rem 1rem;
+    background-color: #6495ed;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #aaaaff;
+}
+
+input[type=button]:active {
+    background-color: #4444ed;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 25rem) {
+
+    .wrapper {
+        max-width: 40rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+    
+    input[type=button] {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (min-width: 40rem) {
+
+    .wrapper {
+        max-width: 50rem;
+    }
